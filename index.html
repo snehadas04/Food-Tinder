@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Food Trinder</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="navbar">
+      <div class="icon">
+        <img src="logo.png" height='110px' width="130px" style="margin-left: 50px" ;>
+      </div>
+
+      <div class="search">
+        <input class="srch" type="search" name=" " placeholder="Search Your Taste">
+        <a href="#"> <button class="botn"> Search</button></a>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#speciality">SPECIALITY</a></li>
+          <li><a href="#popular">POPULAR</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#review">REVIEW</a></li>
+          <li><a href="#order">ORDER</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div id='e1'>
+      <h1
+        style="position: absolute;top: 30px;left: 450px;text-align:center; font-size: 3.5em;color: white; margin-top: 100px;"
+        data-aos="fade-up"><b>
+          WELCOME<br>
+          TO <br>
+          FOOD TINDER<br>
+          </h2>
+    </div>
+  </div>
+  <div class="slid-con">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> <video src="images/01.mp4" autoplay loop class="vid vid1"></video> </div>
+        <div class="swiper-slide"> <video src="images/02.mp4" autoplay loop class="vid vid1"></video> </div>
+        <div class="swiper-slide"> <video src="images/05.mp4" autoplay loop class="vid vid1"></video> </div>
+        <div class="swiper-slide"> <video src="images/06.mp4" autoplay loop class="vid vid1"></video> </div>
+        <div class="swiper-slide"> <video src="images/08.mp4" autoplay loop class="vid vid1"></video> </div>
+        <div class="swiper-slide"> <video src="images/09.mp4" autoplay loop class="vid vid1"></video> </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });        
+  </script>
+  <br><br>
+
+  <div id='s1' data-aos="fade-up">
+    <hr>
+    <h1 class="heading"> search by <span>catagory</span> </h1>
+    <hr>
+    <br><br><br>
+    <img src="./images/north.jpg" alt=img height="175px" width="175px" id="s2" top: 0px;color: yellow;left: 30px;
+      data-aos="fade-right">
+    <img src="./images/south.jpeg" alt=img height="175px" width="175px" id='s3' data-aos="fade-down">
+    <img src="./images/conti.webp" alt=img height="175px" width="175px" id="s4" data-aos="fade-down">
+    <img src="images/italian.jpg" alt=img height="175px" width="175px" id='s5' data-aos="fade-left"><br>
+    <p style="margin-left: 150px;">NORTH-INDIAN &nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      SOUTH-INDIAN
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      CONTINENTAL
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspITALIAN
+    </p>
+  </div>
+  <div id='t1' data-aos="fade-down">
+    <img src="./images/chinese.jpg" alt=img height="175px" width="175px" id="t2" data-aos="fade-right">
+    <img src="./images/cake.jpg" alt=img height="175px" width="175px" id='t3' data-aos="fade-down">
+    <img src="./images/snacks.jpg" alt=img height="175px" width="175px" id="t4" data-aos="fade-down">
+    <img src="images/des.jpg" alt=img height="175px" width="175px" id='t5' data-aos="fade-left"><br>
+    <p style="margin-left: 150px;">&nbsp&nbsp&nbspCHINESE&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      CAKE & COOKIES&nbsp&nbsp&nbsp&nbsp&nbsp
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      SNACKS
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDESSERTS
+    </p>
+
+  </div>
+
+  <!-- speciality section starts  -->
+
+  <section class="speciality" id="speciality">
+
+    <h1 class="heading"> our <span>speciality</span> </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img class="image" src="images/s-img-1.jpg" alt="">
+        <div class="content">
+          <img src="images/s-1.png" alt="">
+          <h3>hot burger</h3>
+
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="images/s-img-2.jpg" alt="">
+        <div class="content">
+          <img src="images/s-2.png" alt="">
+          <h3>chessy pizza</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="images/s-img-3.jpg" alt="">
+        <div class="content">
+          <img src="images/s-3.png" alt="">
+          <h3>spicy starters</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="images/s-img-4.jpg" alt="">
+        <div class="content">
+          <img src="images/s-4.png" alt="">
+          <h3>luscious biriyani</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="images/s-img-5.jpg" alt="">
+        <div class="content">
+          <img src="images/s-5.png" alt="">
+          <h3>cold ice-cream</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="images/s-img-6.jpg" alt="">
+        <div class="content">
+          <img src="images/s-6.png" alt="">
+          <h3>delicious drinks</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="images/s-img-7.jpg" alt="">
+        <div class="content">
+          <img src="images/s-7.png" alt="">
+          <h3>tasty sweets</h3>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="images/s-img-8.jpg" alt="">
+        <div class="content">
+          <img src="images/s-8.png" alt="">
+          <h3>healty breakfast</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <br><br>
+
+  <!-- popular section starts  -->
+
+  <section class="popular" id="popular">
+
+    <h1 class="heading"> todays <span>special</span> offer </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <span class="price">30% off</span>
+        <img src="images/p-1.jpg" alt="">
+        <h3>pan fried momo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+      <div class="box">
+        <span class="price">13% off</span>
+        <img src="images/p-2.jpg" alt="">
+        <h3>chicken fries</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+      <div class="box">
+        <span class="price">23% off</span>
+        <img src="images/p-2.jpg" alt="">
+        <h3>handi biriyani</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+      <div class="box">
+        <span class="price">19% off</span>
+        <img src="images/p-2.jpg" alt="">
+        <h3>panner tikka</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+      <div class="box">
+        <span class="price">22% off</span>
+        <img src="images/p-2.jpg" alt="">
+        <h3>hakka noodels</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+      <div class="box">
+        <span class="price">26% off</span>
+        <img src="images/p-2.jpg" alt="">
+        <h3>white pasta</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+      <div class="box">
+        <span class="price">24% off</span>
+        <img src="images/p-2.jpg" alt="">
+        <h3>chicken lolipop</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+      <div class="box">
+        <span class="price">17% off</span>
+        <img src="images/p-2.jpg" alt="">
+        <h3>grilled fish</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+      <div class="box">
+        <span class="price">27% off</span>
+        <img src="images/p-3.jpg" alt="">
+        <h3>thai soup</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+      <div class="box">
+        <span class="price">18% off</span>
+        <img src="images/p-4.jpg" alt="">
+        <h3>reshmi kabab</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+      <div class="box">
+        <span class="price">15% off</span>
+        <img src="images/p-5.jpg" alt="">
+        <h3>chocolate mouss</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+      <div class="box">
+        <span class="price">12% off</span>
+        <img src="images/p-6.jpg" alt="">
+        <h3>black forest</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <a href="#" class="btn">order now</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- gallery section starts  -->
+
+  <section class="gallery" id="gallery">
+
+    <h1 class="heading"> most prefarable <span> combos </span> </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="images/g-1.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g-2.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g-2.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g-2.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g-2.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g-3.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g-4.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g-5.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g-6.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g-7.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g-8.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/g-9.jpg" alt="">
+        <div class="content">
+          <h3>tasty food</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+          <a href="#" class="btn">ordern now</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- gallery section ends -->
+
+  <!-- chef section starts  -->
+
+  <section class="review1" id="review1">
+
+    <h1 class="heading"> our magical <span>chefs</span> </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="./images/chef2.png" alt="">
+        <h3>john deo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod
+          ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+      <div class="box">
+        <img src="./images/chef3.jpg" alt="">
+        <h3>john deo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod
+          ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+      <div class="box">
+        <img src="./images/chef8.jpg" alt="">
+        <h3>john deo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod
+          ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+      <div class="box">
+        <img src="./images/chef6.jpg" alt="">
+        <h3>john deo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod
+          ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+      <div class="box">
+        <img src="./images/chef4.jpg" alt="">
+        <h3>john deo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod
+          ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+      <div class="box">
+        <img src="./images/chef5.jpg" alt="">
+        <h3>john deo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod
+          ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- steps section starts  -->
+
+  <div class="step-container">
+
+    <h1 class="heading">how it <span>works</span></h1>
+
+    <section class="steps">
+
+      <div class="box">
+        <img src="images/step1.png" alt="">
+        <h3>choose your favorite food</h3>
+      </div>
+      <div class="box">
+        <img src="images/step2.jpg" alt="">
+        <h3>placed order</h3>
+      </div>
+      <div class="box">
+        <img src="images/step3.jpg" alt="">
+        <h3>payments methods</h3>
+      </div>
+      <div class="box">
+        <img src="images/step4.jpg" alt="">
+        <h3>fast and free delivery</h3>
+      </div>
+      <div class="box">
+        <img src="images/step5.webp" alt="">
+        <h3>and finally, enjoy your food</h3>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div id="u4">
+    <h2 class="w3-center">TODAYS DEALS</h2>
+
+    <div class="w3-content w3-section" style="max-width:500px">
+      <img class="mySlides" src="https://www.madrascurrycup.com/images/grab-now/Offer-ad.jpg" style="width:100%">
+      <img class="mySlides"
+        src="https://www.shopickr.com/wp-content/uploads/2017/08/foodpanda-freedom-sale-independence-day-offers-2017.jpg">
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+      }
+    </script>
+  </div>
+
+  <!-- review section starts  -->
+
+  <section class="review" id="review">
+
+    <h1 class="heading"> our customers <span>reviews</span> </h1>
+
+    <div class="box-container">
+
+      <div class="box">
+        <img src="images/pic1.png" alt="">
+        <h3>john deo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod
+          ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+      <div class="box">
+        <img src="images/pic2.png" alt="">
+        <h3>john deo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod
+          ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+      <div class="box">
+        <img src="images/pic3.png" alt="">
+        <h3>john deo</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod
+          ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="center" data-aos="flip-left" data-aos-duration='3000'>
+    <h1
+      style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      Contact Us</h1>
+    <form method="post">
+      <div class="name_field">
+        <input type="text" required>
+        <span></span>
+        <label>Name</label>
+      </div>
+      <div class="name_field">
+        <input type="email" required>
+        <span></span>
+        <label>Email</label>
+      </div><br>
+      <div class="name_field">
+        <input type="password" required>
+        <span></span>
+        <label>Password</label>
+      </div>
+      <div class="name_field">
+        <input type="tel" required>
+        <span></span>
+        <label>Mobile Number</label>
+      </div>
+      <input type="submit" value="SUBMIT">
+    </form>
+  </div>
+  <div class="clearfix" style="margin-left: 520px;">
+    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+      class="cancelbtn">Cancel</button>
+    <button type="submit" class="signupbtn">Sign Up</button>
+  </div>
+  </div>
+  </form>
+  </div>
+  </form>
+  </div>
+  <br>
+  <br>
+  <br><br><br><br><br><br>
+  <section style="background-color: white; overflow: auto" ;>
+    <center>
+      <i>
+        <h1>A GOOD RESTAURENTS IS LIKE A VACATION AND WE PROVIDE YOU</h1>
+      </i>
+    </center>
+  </section>
+  <div class="e3">
+
+  </div>
+  <h1 id='u11'>
+    OUR CREW MEMBERS</h1>
+  <div class="r1">
+    <pre>
+                      <img src="images/che1.jpg"; height="200" width="200"; id='u8' data-aos="zoom-in-up" data-aos-duration="500">                   <img src="images/chef.jpg";   height="200" width="200"; id='u1' style="border-radius:100px;"  data-aos="zoom-in-up" data-aos-duration="750">                   <img src="images/chef3.jpg" alt="img"   height=200  width=200 style="border-radius: 100px;"" data-aos="zoom-in-up" data-aos-duration="1000" >              
+          </pre>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
