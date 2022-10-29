@@ -1,17 +1,17 @@
-let menu = document.querySelector('#menu-bar');
-let navbar = document.querySelector('.navbar');
+let menubar = document.querySelector('#menu-bar');
+let menu = document.querySelector('.menu');
 
-menu.onclick = () => {
+menubar.onclick = () => {
 
-    menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
+    menubar.classList.toggle('fa-times');
+    menu.classList.toggle('active');
 
 }
 
 window.onscroll = () => {
 
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
+    menubar.classList.remove('fa-times');
+    menu.classList.remove('active');
 
     if (window.scrollY > 60) {
         document.querySelector('#scroll-top').classList.add('active');
